@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: ec850f16d6091cb4d8a0908d62ee57a4
+timeCreated: 1449572407
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: MultiEdit
+    100004: RaceCar V03 Body
+    100006: RaceCar V03 Body Pit
+    100008: RaceCar V03 Front Wing
+    100010: RaceCar V03 Windshield
+    100012: RaceCar V03 Windshield.001
+    100014: RC Tyre V03 FL HI
+    100016: RC Tyre V03 FL HI.001
+    100018: RC Tyre V03 RL HI
+    100020: RC Tyre V03 RL HI.001
+    100022: RC V03 SuspRot FL
+    100024: RC V03 SuspRot FR
+    100026: RC Tyre V03 FL LOW
+    100028: RC Tyre V03 FL MID
+    100030: RC Tyre V03 FR HI
+    100032: RC Tyre V03 FR LOW
+    100034: RC Tyre V03 FR MID
+    100036: RC Tyre V03 RL LOW
+    100038: RC Tyre V03 RL MID
+    100040: RC Tyre V03 RR HI
+    100042: RC Tyre V03 RR LOW
+    100044: RC Tyre V03 RR MID
+    100046: RC_Steering_Wheel_V01
+    400000: //RootNode
+    400002: MultiEdit
+    400004: RaceCar V03 Body
+    400006: RaceCar V03 Body Pit
+    400008: RaceCar V03 Front Wing
+    400010: RaceCar V03 Windshield
+    400012: RaceCar V03 Windshield.001
+    400014: RC Tyre V03 FL HI
+    400016: RC Tyre V03 FL HI.001
+    400018: RC Tyre V03 RL HI
+    400020: RC Tyre V03 RL HI.001
+    400022: RC V03 SuspRot FL
+    400024: RC V03 SuspRot FR
+    400026: RC Tyre V03 FL LOW
+    400028: RC Tyre V03 FL MID
+    400030: RC Tyre V03 FR HI
+    400032: RC Tyre V03 FR LOW
+    400034: RC Tyre V03 FR MID
+    400036: RC Tyre V03 RL LOW
+    400038: RC Tyre V03 RL MID
+    400040: RC Tyre V03 RR HI
+    400042: RC Tyre V03 RR LOW
+    400044: RC Tyre V03 RR MID
+    400046: RC_Steering_Wheel_V01
+    2300000: //RootNode
+    2300002: MultiEdit
+    2300004: RaceCar V03 Body
+    2300006: RaceCar V03 Body Pit
+    2300008: RaceCar V03 Front Wing
+    2300010: RaceCar V03 Windshield
+    2300012: RaceCar V03 Windshield.001
+    2300014: RC Tyre V03 FL HI
+    2300016: RC Tyre V03 FL HI.001
+    2300018: RC Tyre V03 RL HI
+    2300020: RC Tyre V03 RL HI.001
+    2300022: RC V03 SuspRot FL
+    2300024: RC V03 SuspRot FR
+    2300026: RC Tyre V03 FL LOW
+    2300028: RC Tyre V03 FL MID
+    2300030: RC Tyre V03 FR HI
+    2300032: RC Tyre V03 FR LOW
+    2300034: RC Tyre V03 FR MID
+    2300036: RC Tyre V03 RL LOW
+    2300038: RC Tyre V03 RL MID
+    2300040: RC Tyre V03 RR HI
+    2300042: RC Tyre V03 RR LOW
+    2300044: RC Tyre V03 RR MID
+    2300046: RC_Steering_Wheel_V01
+    3300000: //RootNode
+    3300002: MultiEdit
+    3300004: RaceCar V03 Body
+    3300006: RaceCar V03 Body Pit
+    3300008: RaceCar V03 Front Wing
+    3300010: RaceCar V03 Windshield
+    3300012: RaceCar V03 Windshield.001
+    3300014: RC Tyre V03 FL HI
+    3300016: RC Tyre V03 FL HI.001
+    3300018: RC Tyre V03 RL HI
+    3300020: RC Tyre V03 RL HI.001
+    3300022: RC V03 SuspRot FL
+    3300024: RC V03 SuspRot FR
+    3300026: RC Tyre V03 FL LOW
+    3300028: RC Tyre V03 FL MID
+    3300030: RC Tyre V03 FR HI
+    3300032: RC Tyre V03 FR LOW
+    3300034: RC Tyre V03 FR MID
+    3300036: RC Tyre V03 RL LOW
+    3300038: RC Tyre V03 RL MID
+    3300040: RC Tyre V03 RR HI
+    3300042: RC Tyre V03 RR LOW
+    3300044: RC Tyre V03 RR MID
+    3300046: RC_Steering_Wheel_V01
+    4300000: RaceCar V03 Body
+    4300002: RaceCar V03 Windshield.001
+    4300004: RC Tyre V03 RL HI.001
+    4300006: RC Tyre V03 RL HI
+    4300008: RC Tyre V03 FL HI.001
+    4300010: MultiEdit
+    4300012: RaceCar V03 Windshield
+    4300014: RaceCar V03 Front Wing
+    4300016: RaceCar V03 Body Pit
+    4300018: RC V03 SuspRot FR
+    4300020: RC V03 SuspRot FL
+    4300022: RC Tyre V03 FL HI
+    4300024: RC Tyre V03 RL LOW
+    4300026: RC Tyre V03 RL MID
+    4300028: RC Tyre V03 RR HI
+    4300030: RC Tyre V03 RR MID
+    4300032: RC Tyre V03 RR LOW
+    4300034: RC Tyre V03 FL MID
+    4300036: RC Tyre V03 FL LOW
+    4300038: RC Tyre V03 FR HI
+    4300040: RC Tyre V03 FR LOW
+    4300042: RC Tyre V03 FR MID
+    4300044: RC_Steering_Wheel_V01
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 95
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

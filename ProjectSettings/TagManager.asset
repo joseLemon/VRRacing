@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - AICar
+  - Waypoints
+  - AICar0
+  - AICar1
+  - AICar2
+  - AICar3
+  - AICar4
+  - AICar5
+  - AICar6
+  - AICar7
+  - AICar8
+  - AICar9
+  - AICar10
+  - AICar11
+  - AICar12
+  - AICar13
+  - AICar14
+  - AICar15
+  - AICar16
+  - AICar17
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - CarInner
+  - CarBody
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
