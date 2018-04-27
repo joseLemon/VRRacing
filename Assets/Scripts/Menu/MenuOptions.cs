@@ -23,7 +23,7 @@ public class MenuOptions : MonoBehaviour {
     public void CarSelection()
     {
         StartCoroutine(DoFade(MainMenu));
-        CameraAnimations.Play("FlyCameraToCarSelection");
+        CameraAnimations.SetTrigger("SelectionMenu");
         CarAnimations.SetTrigger("CarSelection");
         StartCoroutine(DoFadeIn(CarSelectionMenu));
     }
@@ -31,7 +31,22 @@ public class MenuOptions : MonoBehaviour {
     public void TrackSelection()
     {
         StartCoroutine(DoFade(CarSelectionMenu));
+        CameraAnimations.SetTrigger("TrackMenu");
         StartCoroutine(DoFadeIn(TrackSelectionMenu));
+    }
+
+    public void BackToSelection()
+    {
+        StartCoroutine(DoFade(TrackSelectionMenu));
+        CameraAnimations.SetTrigger("BackToSelection");
+        StartCoroutine(DoFadeIn(CarSelectionMenu));
+    }
+
+    public void BackToMain()
+    {
+        StartCoroutine(DoFade(CarSelectionMenu));
+        CameraAnimations.SetTrigger("BackToMain");
+        StartCoroutine(DoFadeIn(MainMenu));
     }
 
     public void ExitGame()
@@ -62,6 +77,7 @@ public class MenuOptions : MonoBehaviour {
             canvasGroup.alpha += Time.deltaTime * 2;
             yield return null;
         }
+        canvasGroup.interactable = true;
         yield return null;
     }
 }
