@@ -24,6 +24,12 @@ TagManager:
   - AICar15
   - AICar16
   - AICar17
+  - CrashCollider
+  - BrakeSection
+  - BrakeSection_Soft
+  - BrakeSection_Medium
+  - BrakeSection_Hard
+  - ReductionSpeed
   layers:
   - Default
   - TransparentFX

@@ -10,9 +10,7 @@ public class LapComplete : MonoBehaviour {
     public GameObject MilliLabel;
     public GameObject LapCounter;
     public int LapsDone;
-    [Range(1,3)]public int LapsTotal;
     public float RawTime;
-    public GameObject RaceFinish;
 
     public static LapComplete instance;
 
@@ -31,7 +29,7 @@ public class LapComplete : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider theCollision)
     {
         /*
          * Add a new lap to lap counter
@@ -41,15 +39,12 @@ public class LapComplete : MonoBehaviour {
          * Activate first checkpoint to start the checkpoints from the beggining
          * Deactivate the last checkpoint
          */
+
+
 		LapsDone++;
-		/*
-         * If there are n number of laps completed (defined on if), finish the race
-         */
-		if(LapsDone == LapsTotal)
-		{
-			RaceFinish.SetActive(true);
-		}
+
         RawTime = PlayerPrefs.GetFloat("RawTime");
+
         if (LapTimeManager.RawTime <= RawTime)
         {
             // set label for best time on lap complete

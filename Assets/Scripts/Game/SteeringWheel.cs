@@ -24,13 +24,32 @@ public class SteeringWheel : MonoBehaviour
 
         if (horizontalAxis == 0 && rotationZ != 0)
         {
-            float rotateBackForce = .8f;
+            float rotateBackForce = 0.8f;
             if (rotationZ > 0)
             {
-                if (rotationZ > rotateBackForce) { rotationZ -= rotateBackForce; } else { rotationZ = 0f; };
-            } else if(rotationZ < 0)
+                if (rotationZ > rotateBackForce)
+                {
+                    rotationZ -= rotateBackForce;
+                }
+                else
+                {
+                    rotationZ = 0f;
+                }
+            }
+            else if(rotationZ < 0)
             {
-                if (rotationZ < rotateBackForce) { rotationZ += rotateBackForce; } else { rotationZ = 0f; };
+                if (rotationZ < rotateBackForce)
+                {
+                    rotationZ += rotateBackForce;
+                }
+                else
+                {
+                    rotationZ = 0f;
+                }
+            }
+            else
+            {
+                rotationZ = 0f;
             }
 
         }

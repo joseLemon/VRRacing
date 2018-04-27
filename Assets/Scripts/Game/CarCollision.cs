@@ -2,32 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarCollision : MonoBehaviour {
+public class CarCollision : MonoBehaviour
+{
 
     public AudioClip collisionClip;
-    private AudioSource collisionSource;
 
-	// Use this for initialization
-	void Start ()
+    void Start()
     {
-        /*
-         * This script was meant to provide a "collision sound" when car collided with barriers
-         * or other cars, currently not working
-         */
-        collisionSource = gameObject.AddComponent<AudioSource>();
-        collisionSource.clip = collisionClip;
-        collisionSource.volume = 2;
-        collisionSource.loop = false;
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().loop = false;
+        GetComponent<AudioSource>().clip = collisionClip;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision col)
     {
-        //Debug.Log("Collision");
-        collisionSource.Play();
+        // detect collision against other cars, so that we can take evasive action
+        if (col.rigidbody != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
+
 }

@@ -44,7 +44,7 @@ public class RaceFinish : MonoBehaviour {
         int iteration = 1;
         foreach(Transform lapLabel in FinishLapLabelContainer.transform)
         {
-            if (iteration <= LapComplete.instance.LapsTotal)
+            if (iteration <= EndGameManager.instance.LapsTotal)
             {
                 int MinCount = PlayerPrefs.GetInt("LapMin_" + iteration);
                 int SecCount = PlayerPrefs.GetInt("LapSec_" + iteration);

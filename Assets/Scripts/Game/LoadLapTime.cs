@@ -38,6 +38,6 @@ public class LoadLapTime : MonoBehaviour {
         SecLabel.GetComponent<Text>().text = SecString;
         MilliLabel.GetComponent<Text>().text = "" + MilliCount;
 
-        LapLabel.GetComponent<Text>().text = "" + LapComplete.instance.LapsTotal;
+        LapLabel.GetComponent<Text>().text = "" + EndGameManager.instance.LapsTotal;
     }
 }

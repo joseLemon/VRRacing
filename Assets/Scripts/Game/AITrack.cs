@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AITrack : MonoBehaviour {
+public class AITrack : MonoBehaviour
+{
 
     public GameObject TheMarker;
     public static List<Transform> waypoints = new List<Transform>();
@@ -11,6 +12,7 @@ public class AITrack : MonoBehaviour {
 
     //private GameObject WaypointsContainer;
     private int MarkTracker;
+    private int currentFlag = -1;
 
     private void Start()
     {
@@ -23,7 +25,8 @@ public class AITrack : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         int iteration = 0;
         foreach (Transform waypoint in waypoints)
         {
@@ -34,13 +37,21 @@ public class AITrack : MonoBehaviour {
              * Now set the position of the marker to the waypoint position with the offset applied
              */
 
-            if (MarkTracker == iteration)
+            if (MarkTracker == iteration && currentFlag != MarkTracker)
             {
-                float offset = 2.5f;
+                currentFlag = MarkTracker;
+
+                //Asignamos el mismo tag
+                TheMarker.tag = waypoint.tag;
+
+                //waypoint.GetComponent<WaypointVariables>().BrakeSensitivity;
+
+                float offset = waypoint.GetComponent<WaypointVariables>().WaypointDispertion;
                 float waypoint_x = waypoint.transform.position.x + Random.Range(-offset, offset);
                 float waypoint_y = waypoint.transform.position.y;
-                float waypoint_z = waypoint.transform.position.z + Random.Range(-offset, offset);
-                TheMarker.transform.position = new Vector3(waypoint_x,waypoint_y,waypoint_z);
+                float waypoint_z = waypoint.transform.position.z + Random.Range(-(offset / 2), (offset / 2));
+                TheMarker.transform.position = new Vector3(waypoint_x, waypoint_y, waypoint_z);
+                TheMarker.transform.rotation = Quaternion.Euler(0, waypoint.transform.rotation.eulerAngles.y, 0);
             }
             iteration++;
         }
@@ -61,10 +72,9 @@ public class AITrack : MonoBehaviour {
          */
         if (collision.gameObject.tag == AICarTag)
         {
-
             this.GetComponent<BoxCollider>().enabled = false;
             MarkTracker++;
-            if(MarkTracker == waypoints.Count)
+            if (MarkTracker == waypoints.Count)
             {
                 MarkTracker = 0;
             }
